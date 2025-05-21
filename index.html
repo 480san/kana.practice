@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>假名練習工具</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>假名練習</h1>
+    <p id="modeStatus">目前為一般模式</p>
+    <div id="question-area">
+        <p>請輸入這個假名的羅馬拼音</p>
+        <div id="question">あ</div> <!-- 題目顯示區 -->
+    </div>
+
+    <div id="input-area">
+        <input type="text" id="answer" placeholder="請輸入羅馬拼音">
+        <button id="check">檢查答案</button>
+
+        <p id="typing">(你現在輸入的文字會顯示在這裡)</p>
+
+        <div id="result-area">
+            <p id="result">結果會顯示在這裡</p> <!-- 顯示結果 -->
+        </div>
+
+        <div id="stats">
+            <p id="score">答對:0題，答錯:0題</p>
+            <p id="accuracy">正確率0% (0/0)</p>
+            <button id="clearScore">清除成績</button>
+            <button id="showWrong">查看錯題</button>
+            <button id="wrongMode">進入錯題模式</button>
+        </div>
+
+        <div id="next-area">
+            <button id="next">下一題</button>
+            <button id="reset">重新開始</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
